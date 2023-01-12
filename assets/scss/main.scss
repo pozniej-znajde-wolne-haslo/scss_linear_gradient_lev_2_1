@@ -1,0 +1,92 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Links === */
+
+.links, .links a {
+    @include links_desktop($deco, $dark-font-color, $links-font-size_desktop, $font-weight);
+}
+header {
+    @include linear-gradient($color-one, $color-two, $color-three, $color-four);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    font-family: $font-family;
+
+    .logo {
+        align-self: flex-start;
+        margin-left: 2rem;
+        margin-top: 2rem;
+    }
+
+    h1 {
+        color: $light-font-color;
+        align-self: center;
+        font-size: 200px;
+
+        span {
+            display: block;
+            font-size: 100px;
+            text-align: center;
+        }
+    }
+
+    nav {
+        margin: 0 5rem 3rem 0;
+
+        a {
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .links, .links a {
+        @include links_laptop($deco, $dark-font-color, $links-font-size_laptop, $font-weight);
+    }
+
+    header {
+
+        h1 {
+        font-size: 150px;
+
+            span {
+                font-size: 50px;
+            }
+        }
+    } 
+}
+
+@media screen and (max-width: 900px) {
+    header {
+
+        h1 {
+        font-size: 100px;
+        } 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header {
+
+        h1 {
+        font-size: 70px;
+        } 
+
+        nav {
+            margin: 0 2rem 2rem 0;
+        }
+    }
+}
+
+
+
+

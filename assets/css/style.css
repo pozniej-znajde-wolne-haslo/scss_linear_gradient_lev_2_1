@@ -1,0 +1,79 @@
+/* === Fonts general styles === */
+/* === Linear Gradient === */
+/* === Links extra properties === */
+/* === body background linear-gradient === */
+/* Basic Styling Links */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Links === */
+.links, .links a {
+  text-decoration: none;
+  color: rgb(37, 35, 35);
+  font-size: 50px;
+  font-weight: bold;
+}
+
+header {
+  background-image: linear-gradient(45deg, #5bf2fd 12.5%, #fcc736 12.5%, #fcc736 25%, #fd5f5f 25%, #fd5f5f 37.5%, #bb4dfa 37.5%, #bb4dfa 50%, #5bf2fd 50%, #5bf2fd 62.5%, #fcc736 62.5%, #fcc736 75%, #fd5f5f 75%, #fd5f5f 87.5%, #bb4dfa 87.5%, #bb4dfa 100%);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  font-family: Arial, sans serif;
+}
+header .logo {
+  align-self: flex-start;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+header h1 {
+  color: rgb(251, 251, 251);
+  align-self: center;
+  font-size: 200px;
+}
+header h1 span {
+  display: block;
+  font-size: 100px;
+  text-align: center;
+}
+header nav {
+  margin: 0 5rem 3rem 0;
+}
+header nav a {
+  margin-left: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .links, .links a {
+    text-decoration: none;
+    color: rgb(37, 35, 35);
+    font-size: 35px;
+    font-weight: bold;
+  }
+  header h1 {
+    font-size: 150px;
+  }
+  header h1 span {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 900px) {
+  header h1 {
+    font-size: 100px;
+  }
+}
+@media screen and (max-width: 500px) {
+  header h1 {
+    font-size: 70px;
+  }
+  header nav {
+    margin: 0 2rem 2rem 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
